@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Register your shop | SeePay</title><meta name="description" content="Register a shop with SeePay and preview your shop link."><meta name="theme-color" content="#0B2E21"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/seepay.css"></head><body>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><nav id="nav" class="page-nav"><div class="wrap"><a class="logo" href="index.html" aria-label="SeePay home"><svg><use href="#mark"/></svg>SeePay</a><div class="links"><a href="index.html#how">How it works</a><a href="index.html#features">Features</a><a href="index.html#pricing">Pricing</a><a href="index.html#agents">Agents</a><a href="agent.html" class="">Agent portal</a><a href="index.html#faq">FAQ</a></div><a class="btn g" href="register.html">Get my shop</a></div></nav><main class="page-shell"><div class="wrap page-intro"><span class="eyebrow">● SHOP REGISTRATION</span><h1>Let's get <em>you online.</em></h1><p>Tell us a little about your business. Preview your SeePay shop address, then save a demo registration.</p><a class="page-back" href="index.html">← Back to SeePay</a></div><section class="sec connected-panel" id="register">
+  <div class="wrap">
+    <span class="demo-label">Connected in this file · Demo mode</span>
+    <h2 class="big" style="margin-top:1rem">Register your SeePay shop.</h2>
+    <p class="lead">Enter your business details and preview the shop address before you continue.</p>
+    <form class="connected-form" id="shop-form">
+      <h3>Shop details</h3>
+      <p class="subnote">Fields marked * are required. This version saves a local demo record in this browser; it does not submit a real application.</p>
+      <div class="connected-fields">
+        <div class="connected-field"><label for="shop-name">Business name *</label><input id="shop-name" name="businessName" placeholder="e.g. Ama's Kitchen" autocomplete="organization" required maxlength="70"></div>
+        <div class="connected-field"><label for="shop-slug">Shop link name *</label><input id="shop-slug" name="slug" placeholder="amas-kitchen" required minlength="2" maxlength="32" pattern="[a-z0-9]+(-[a-z0-9]+)*" autocomplete="off" aria-describedby="slug-help"><small id="slug-help" style="color:var(--pmut)">Use lowercase letters, numbers and hyphens.</small></div>
+        <div class="connected-field"><label for="owner-name">Owner's full name *</label><input id="owner-name" name="ownerName" placeholder="Your name" autocomplete="name" required maxlength="80"></div>
+        <div class="connected-field"><label for="business-category">Business type *</label><select id="business-category" name="category" required><option value="">Choose a category</option><option>Food and drink</option><option>Fashion and boutique</option><option>Beauty and salon</option><option>Electronics and phone repair</option><option>Groceries and provisions</option><option>Home and furniture</option><option>Professional services</option><option>Other</option></select></div>
+        <div class="connected-field"><label for="shop-whatsapp">WhatsApp number *</label><input id="shop-whatsapp" name="whatsapp" type="tel" placeholder="e.g. 024 123 4567" autocomplete="tel" required maxlength="30"></div>
+        <div class="connected-field"><label for="momo-network">Mobile Money network *</label><select id="momo-network" name="network" required><option value="">Choose a network</option><option>MTN MoMo</option><option>Telecel Cash</option><option>AT Money</option></select></div>
+        <div class="connected-field"><label for="momo-number">MoMo number *</label><input id="momo-number" name="momoNumber" type="tel" placeholder="Number for payouts" required maxlength="30"></div>
+        <div class="connected-field"><label for="agent-ref">Agent referral code (optional)</label><input id="agent-ref" name="referralCode" placeholder="e.g. SP-AMA-1234" maxlength="30" autocomplete="off"></div>
+      </div>
+      <div class="connected-preview"><small>Your shop address preview</small><strong><span id="slug-preview">your-shop</span>.seepay.shop</strong></div>
+      <div class="connected-actions"><button class="btn g" type="submit">Save demo registration</button><a class="btn w" href="index.html">Back to SeePay home</a></div>
+      <div id="shop-message" class="connected-message" role="status" aria-live="polite"></div>
+      <p class="connected-note"><strong>Important:</strong> this local demo does not create a live subdomain, take the GH₵150 setup payment, verify a MoMo account, or send your details to SeePay. Those steps need the deployed site, database and payment backend.</p>
+    </form>
+    <div class="connected-form" style="margin-top:1rem">
+      <h3>Demo registrations on this browser</h3>
+      <p class="subnote">New registrations appear here and can be matched to the agent code entered above.</p>
+      <div id="local-shop-list" class="agent-shoplist"><div class="agent-empty">No demo shops registered yet.</div></div>
+    </div>
+  </div>
+</section>
+
+</main><footer class="page-footer"><div class="wrap"><a class="logo" href="index.html"><svg><use href="#mark"/></svg>SeePay</a><span>© 2026 SeePay. Made in Ghana.</span><span>One connected experience for Ghanaian businesses.</span></div></footer><script src="assets/app.js" defer></script></body></html>
